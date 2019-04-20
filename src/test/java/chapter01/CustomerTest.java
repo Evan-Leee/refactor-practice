@@ -19,7 +19,7 @@ public class CustomerTest {
 	}
 
 	@Test
-	public void should_return_7_point_5_and_earn_one_frequent_renter_points_when_is_childrens_movie_rent_for_one_week() throws IllegalAccessException, ClassNotFoundException, InstantiationException {
+	public void should_return_7_point_5_and_earn_one_frequent_renter_points_when_is_childrens_movie_rent_for_one_week() {
 		int priceCode = 2;
 		Movie movie = new Movie(movieTitle, priceCode);
 		Rental rental = new Rental(movie, _daysRented);
@@ -34,7 +34,7 @@ public class CustomerTest {
 	}
 
 	@Test
-	public void should_return_21_and_earn_2_frequent_renter_points_when_is_new_movie_rent_for_7_days() throws IllegalAccessException, ClassNotFoundException, InstantiationException {
+	public void should_return_21_and_earn_2_frequent_renter_points_when_is_new_movie_rent_for_7_days() {
 
 		int priceCode = 1;
 		Movie movie = new Movie(movieTitle, priceCode);
@@ -50,7 +50,7 @@ public class CustomerTest {
 	}
 
 	@Test
-	public void should_return_9_point_5_and_earn_1_frequent_renter_points_when_is_regular_movie_rent_for_7_days() throws IllegalAccessException, ClassNotFoundException, InstantiationException {
+	public void should_return_9_point_5_and_earn_1_frequent_renter_points_when_is_regular_movie_rent_for_7_days() {
 
 		int priceCode = 0;
 		Movie movie = new Movie(movieTitle, priceCode);

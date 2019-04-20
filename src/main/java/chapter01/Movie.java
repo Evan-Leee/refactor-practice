@@ -10,7 +10,7 @@ public class Movie {
 	private String _title;
 	private Map<Integer, String> priceCodeMap = new HashMap();
 
-	public Movie(String title, int priceCode) throws IllegalAccessException, InstantiationException, ClassNotFoundException {
+	public Movie(String title, int priceCode) {
 		_title = title;
 //		priceCodeMap.put(CHILDREN, "Children");
 //		priceCodeMap.put(REGULAR, "Regular");
@@ -20,11 +20,11 @@ public class Movie {
 
 	private Price _price;
 
-	public int getPriceCode() { // 取得价格代号
+	public int getPriceCode() {
 		return _price.getPriceCode();
 	}
 
-	public void setPriceCode(int arg) throws ClassNotFoundException, IllegalAccessException, InstantiationException { // 设定价格代号
+	public void setPriceCode(int arg) {
 		switch (arg) {
 		case REGULAR:
 			_price = new RegularPrice();
@@ -38,8 +38,7 @@ public class Movie {
 		default:
 			throw new IllegalArgumentException("Incorrect Price Code");
 		}
-//		System.out.println(">>>>>>>>>>>>>" + arg);
-//		System.out.println(">>>>>>>>>>>>>" + priceCodeMap);
+
 //		Class price = Class.forName(priceCodeMap.get(arg)+"Price");
 //		_price = (Price) price.newInstance();
 	}
