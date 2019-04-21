@@ -1,7 +1,7 @@
 package chapter01;
 
 public abstract class Price {
-	abstract int getPriceCode(); // 取得价格代号
+	abstract int getPriceCode();
 
 	abstract double getCharge(int daysRented);
 

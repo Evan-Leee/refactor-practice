@@ -1,8 +1,8 @@
 package chapter01;
 
 public class Rental {
-	private Movie _movie; // 影片
-	private int _daysRented; // 租期
+	private Movie _movie;
+	private int _daysRented;
 
 	public Rental(Movie movie, int daysRented) {
 		_movie = movie;
